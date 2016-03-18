@@ -37,9 +37,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-/**
- * Created by junvir on 3/13/2016.
- */
 public class ForecastFragment extends Fragment {
 
     private ArrayAdapter<String> mForecastAdapter;
@@ -156,8 +153,8 @@ public class ForecastFragment extends Fragment {
             );
 
             if(unitType.equals(getString(R.string.pref_units_imperial))){
-                high = (high * 1.8) + 32;
-                low = (low * 1.8) +32;
+                    high = (high * 1.8) + 32;
+                    low = (low * 1.8) +32;
             }else if (!unitType.equals(getString(R.string.pref_units_metric))){
                 Log.d(LOG_TAG, "Unit type not found: " + unitType);
             }
